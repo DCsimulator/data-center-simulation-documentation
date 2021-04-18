@@ -1,0 +1,16 @@
+site_name: Simulation Sedai
+nav:
+  - Abstract: index.md
+  - Installation: installation.md
+  - Documentation: architecture.md
+  - File Structure: fileStructure.md
+  - Components: 
+    - Application: appComponents.md
+    - Config: configComponents.md
+    - File: fileComponents.md
+    - Metrics: metricsComponents.md
+    - Simulation: simulationComponents.md
+    - System: systemComponents.md
+    - Init: initComponents.md
+theme: material
+repo_url: https://github.com/DCsimulator/data-center-simulation

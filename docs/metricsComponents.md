@@ -1,0 +1,80 @@
+#### <a name="metrics/Metrics.java"></a> metrics/Metrics.java
+
+- Global variables:
+    - timestamp:
+      - type: `long`
+	  - accessModifier: private
+	  - description: timestamp of the metrics retrieved
+	- totalRuntime:
+	  - type: `long`
+	  - accessModifier: private
+	  - description: the total runtime of simulation
+	- p_cpu:
+	  - type: `float`
+	  - accessModifier: private
+	  - desription: cpu utilization of a particular process
+	- p_memory:
+	  - type: `float`
+	  - accessModifier: private
+	  - desription: memory utilization of a particular process
+	- numOfInstances:
+	  - type: `int` 
+	  - accessModifier: private
+	  - description: the number of instances
+	- applicationId:
+	  - type: `int`
+	  - accessModifier: private
+	  - description: id of the application
+	- diskIO:
+	  - type: `long`
+	  - accessModifier: private
+	  - description: disk IO usage
+	- bandwidth:
+	  - type: `long`
+	  - aceessModifier: private
+	  - description: bandwidth usage
+- Functions:
+	- Metrics:
+	  - type: constructor
+	  - accessModifier: public
+	  - description: used for initilization
+	- getTimeStamp:
+	  - type: general function
+	  - accessModifier: public
+	  - returnType: `long`
+	  - description: returns the timestamp of metrics
+	- getRunTime:
+	  - type: general function
+	  - accessModifier: public
+	  - returnType: `long`
+	  - description: returns the run time 
+	- getCpuUtil:
+	  - type: general function
+	  - accessModifier: public
+	  - returnType: `float`
+	  - description: returns the cpu utilization
+	- getMemoryUtil:
+	  - type: general function
+	  - accessModifier: public
+	  - returnType: `float`
+	  - description: returns the memory utlization 
+	- getNumOfInstances:
+	  - type: general function
+	  - accessModifier: public
+	  - returnType: `int`
+	  - description: returns the number of instances
+	- getApplicationId:
+	  - type: general function
+	  - accessMdifier: public
+	  - returnType: `int`
+	  - description: returns the id of the appication
+	- getDiskIO:
+	  - type: genral function
+	  - accessModifier: public
+	  - returnType: `long`
+	  - description: returns the disk IO utilization
+	- getBandwidth:
+	  - type: genral function
+	  - accessModifier: public
+	  - returnType: `long`
+	  - description: returns the bandwidth utilization

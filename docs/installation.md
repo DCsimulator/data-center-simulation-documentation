@@ -23,21 +23,33 @@ snap install victoriametrics
 
 To run VictoriaMetrics as a system service read [this](https://github.com/VictoriaMetrics/VictoriaMetrics/issues/43).
 
+### Install Gradle
+
+To install Gradle run the following commands in terminal,
+
+1. Install SDKMAN!
+
+```
+curl -s "https://get.sdkman.io" | bash
+```
+
+2. Install Gradle through SDKMAN!
+
+```
+sdk install gradle 7.0
+```
 
 ## Dependencies
 
 ### JSON in Java
 
-- Download the file from the this [link](https://repo1.maven.org/maven2/org/json/json/20201115/json-20201115.jar)
-- Extarct the downloaded file by running the following command in the terminal, <br />
-`jar -xvf filename.jar`
-- After extraction there will be two directories ***org*** and ***META-INF***.
-- Copy the ***org*** directory to the project's directory.
+- This will be downloaded automatically by Gradle.
 
 
 ## Usage
-Clone the repo and compile the Init.java file,
+
+Clone the repo and go to the directory,
+
 ```
-javac Init.java
-java Init
+gradle run
 ```

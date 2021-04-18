@@ -36,7 +36,7 @@ curl -s "https://get.sdkman.io" | bash
 2. Install Gradle through SDKMAN!
 
 ```
-sdk install gradle 7.0
+sdk install gradle 7
 ```
 
 ## Dependencies

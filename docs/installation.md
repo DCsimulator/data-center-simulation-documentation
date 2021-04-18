@@ -45,7 +45,6 @@ sdk install gradle 7.0
 ## Usage
 
 Clone the repo and go to the directory,
-
 ```
 gradle run
 ```

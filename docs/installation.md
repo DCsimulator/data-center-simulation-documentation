@@ -28,15 +28,13 @@ To run VictoriaMetrics as a system service read [this](https://github.com/Victor
 To install Gradle run the following commands in terminal,
 
 1. Install SDKMAN!
-
 ```
 curl -s "https://get.sdkman.io" | bash
 ```
 
 2. Install Gradle through SDKMAN!
-
 ```
-sdk install gradle 7
+sdk install gradle 7.0
 ```
 
 ## Dependencies

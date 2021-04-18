@@ -41,9 +41,7 @@ sdk install gradle 7.0
 
 ## Dependencies
 
-### JSON in Java
-
-- This will be downloaded automatically by Gradle.
+- JSON in Java
 
 
 ## Usage

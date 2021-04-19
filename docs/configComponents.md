@@ -7,29 +7,30 @@ application depends on the other applications.
 
 This file includes: <br />
 An array of application objects in which each objects has,
+
 - applicationId: unique id of an application
 - processes: <br />
-  an array of process objects, each process include
-  - processId: Unique id of process
-  - min_memory: minimum amount of memory a process instance use
-  - max_memory:  maximum amount of memory a process instance use
-  - min_cpu: minimum amount of cpu a process instance use
-  - max_cpu: maximum amount of cpu a process instance use
-  - min_diskIO: min amount of disk IO bandwidth a process instance use
-  - max_diskIO: max amount of disk IO bandwidth a process instance use
-  - min_bandwidth: min amount of network bandwidth a process instance use
-  - max_bandwidth: min amount of network bandwidth a process instance use
-  - mem_leak: percent of memory not deallocated on process termination
-  - Count_proportion: proportion of portugal process instance in all instances
-  - min_runtime: minimum amount of cpu time of process
-  - max_runtime: maximum amount of cpu time of process
-  - depends: <br />
-    An array of objects where each object has,
-	- applicationId: application to which process is related
-	- processId: the process of application it is related to
-	- type: which resource of  this process is affected
-	- resources: which resources of the dependant process affects this process’s resource utiliztaion.
-    - factors: the factor of dependency of the resources in the resources array to the type resource of this process.
+  An array of objects, each process include,
+    - processId: Unique id of process
+    - min_memory: minimum amount of memory a process instance use
+    - max_memory:  maximum amount of memory a process instance use
+    - min_cpu: minimum amount of cpu a process instance use
+    - max_cpu: maximum amount of cpu a process instance use
+    - min_diskIO: min amount of disk IO bandwidth a process instance use
+    - max_diskIO: max amount of disk IO bandwidth a process instance use
+    - min_bandwidth: min amount of network bandwidth a process instance use
+    - max_bandwidth: min amount of network bandwidth a process instance use
+    - mem_leak: percent of memory not deallocated on process termination
+    - Count_proportion: proportion of portugal process instance in all instances
+    - min_runtime: minimum amount of cpu time of process
+    - max_runtime: maximum amount of cpu time of process
+    - depends: <br />
+      An array of objects where each object has,
+        - applicationId: application to which process is related
+        - processId: the process of application it is related to
+        - type: which resource of  this process is affected
+        - resources: which resources of the dependant process affects this process’s resource utiliztaion
+        - factors: the factor of dependency of the resources in the resources array to the type resource of this process.
 
 
 #### <a name="config/SysConfig.json"></a> config/SysConfig.json
@@ -40,7 +41,8 @@ the number of processes within each of the applications, a base number of instan
 configuring the seasonality aspect of the simulation, time quantum for the round robin scheduling, the server memory and finally the
 system resources which are the RAM, hard disk, disk IO, network bandwidth and the basic CPU utilization.
 
-This file includes: 
+This file includes: <br />
+
 - simDuration: duration of simulation in milliseconds _[type: long]_
 - interval: interval in which metrics are read in milliseconds _[type: long]_
 - numOfProcesses: number of processes _[type: int]_

@@ -1,4 +1,4 @@
-## Install Java
+### Install Java
 
 Run the following code in the terminal to install java in the system,
 ```
